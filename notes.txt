@@ -5,5 +5,23 @@
 <style></style> -> css block
 
 binding text
-1. must has syntax with using double callibraces
+1. must task syntax with using double callibraces
 2. using v-text
+
+binding Html
+1. using v-html -> must carefully using this, since it will execute all the html syntax in
+
+binding attributes -> to binding attributes in the HTML such as id, boolean, etc
+1. using v-bind:[attribute]='name'
+
+binding inline style
+1. using v-bind:style='{[style]}'
+2. for binding with array, last style has higher priority
+
+shorthand v-bind
+1. delete v-bind, example :
+complete v-bind : 
+  <h2 v-bind:style="headerStyle">Binding style</h2>
+shorthand:
+  <h2 :style="headerStyle">Binding style</h2>
+
