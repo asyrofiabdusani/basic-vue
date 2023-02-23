@@ -23,6 +23,21 @@
     }">Binding inline style</h2>
   <h2 v-bind:style="headerStyle">Binding style</h2>
   <h2 v-bind:style="[headerStyle, successStyle]">Binding style</h2>
+
+  <h1>Conditional rendering</h1>
+
+  <h2 v-if="num===0">The Number is zero</h2>
+  <h2 v-else-if="num<0">The number is negative</h2>
+  <h2 v-else-if="num>0">The number is positive</h2>
+  <h2 v-else>Not Number</h2>
+
+  <template v-if="display">
+    <h2>Test</h2>
+    <h2>Conditional</h2>
+    <h2>Rendering</h2>
+  </template>
+
+  <h2 v-show="isShow">Using v-show</h2>
 </template>
 
 <script>
@@ -48,7 +63,11 @@ export default {
       },
       successStyle: {
         color: 'green',
-      }
+      },
+      // conditional rendering 
+      num: 20,
+      display: true,
+      isShow: false,
     }
   }
 }
