@@ -33,3 +33,17 @@ v-else
 <template></template> -> is using to wrap some elements but the wrapper is hide
 
 v-show -> make the display to none when the conditional is false
+
+* List rendering
+v-for directive
+array of Object
+array of string
+array of array
+block html elements
+Object key value pairs
+
+syntax :
+v-for='(var, index) in arr' :key='index'
+
+every v-for must has key to prevent the error for every data in itterate
+key must be unique
