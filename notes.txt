@@ -1,0 +1,9 @@
+.vue -> custom format to describe a portion of UI
+.vue ->
+<template></template> -> template Html of ui
+<script></script> -> js script block
+<style></style> -> css block
+
+binding text
+1. must has syntax with using double callibraces
+2. using v-text
