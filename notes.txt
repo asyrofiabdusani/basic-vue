@@ -47,3 +47,34 @@ v-for='(var, index) in arr' :key='index'
 
 every v-for must has key to prevent the error for every data in itterate
 key must be unique
+
+form
+modifier : 
+1. v-model.trim -> trim input
+2. v-model.number -> change input as number
+3. v-model.lazy -> the input will be change lazy, not on time
+4. preventDefault -> ignore refresh when click submit. It also can be used as @submit.prevent
+5. @keyup.[button] -> event for keyboard 
+
+v-once -> make the element can't be changed
+v-pre -> make double callibraces show as it
+
+* computed properties
+properties that can be bound like data properties
+composing new data from existing sources
+computed properties only call when event executes, method will execute when there is changhed in the screen
+
+watcher
+allow to watch any data or computed property and execute some code in response to change in the value
+
+watcher vs computed
+use computed for :
+1. need to compose new data from existing data sources
+2. need to reduce length variable
+
+use watcher for :
+1. check if propertyhas changed value to know the perform
+2. call the api in response to change in application data
+3. handler make watcher run in the first load time
+4. deep make the watcher access object in array
+
