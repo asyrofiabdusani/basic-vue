@@ -1,8 +1,8 @@
 <template>
-    <div id="app">
+    <div id="app-menu">
         <nav>
             <router-link to="/">Basic Usage</router-link> |
-            <!-- <router-link to="/looping">Looping Usage</router-link> | -->
+            <router-link to="/looping">Looping Usage</router-link> |
         </nav>
         <router-view />
     </div>
